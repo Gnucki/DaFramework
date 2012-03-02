@@ -1,0 +1,10 @@
+/**********************************************/
+/* Styles appliqués aux écran de connexion/login. */
+/**********************************************/
+.form_connexion
+{
+   	width:100%;
+   	background:rgb(200,200,120);
+   	border-top: 1px solid rgb(215,215,135);
+	border-bottom: 1px solid rgb(160,160,80);
+}

@@ -1,0 +1,47 @@
+/**********************************************/
+/* Styles appliqués à la barre d'info. */
+/**********************************************/
+.info_login
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}
+
+.info_motdepasse
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}
+
+#info_connexion
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}
+
+
+#info_deconnexion
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}
+
+
+#info_groupe
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}
+
+
+#info_joueur
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}
+
+#info_perso
+{
+   	padding: 3px;
+   	border-right: 1px solid rgb(180,180,100);
+}

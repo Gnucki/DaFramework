@@ -1,0 +1,1307 @@
+/*******************************************************/
+/* Styles appliqués de manière générale non détaillée. */
+/*******************************************************/
+/******************* INFO/ERREUR *******************/
+ .classecadre_info_tab
+{
+	color: white;
+	background-image: url('../images/verre3.png');
+	/*background: rgb(230,150,150);*/
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+	text-align: center;
+	padding: 1px;
+}
+
+.classecadre_erreur_tab
+{
+	color: white;
+	background-image: url('../images/verre4.png');
+	/*background: rgb(220,170,20);*/
+	border-top: 1px solid rgb(220,170,20);
+	border-left: 1px solid rgb(220,170,20);
+	border-bottom: 1px solid rgb(220,170,20);
+	border-right: 1px solid rgb(220,170,20);
+	text-align: center;
+	padding: 1px;
+}
+
+ .classetexte_info_tab
+{
+	color: white;
+	/*background-image: url('../images/verre3.png');
+	/*background: rgb(230,150,150);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);*/
+	text-align: center;
+	padding: 8px;
+}
+
+ .classesep_tab
+{
+	background: rgb(80,80,105);
+	padding: 4px;
+}
+
+/******************* FORM *******************/
+._form_tab
+{
+	/*padding: 2px;
+	background: rgb(200,200,200);*/
+	/*border-top: 1px solid rgb(220,220,220);
+	border-bottom: 1px solid rgb(120,120,120);*/
+	/*background: rgb(180,150,130);*/
+	border-left: 1px solid rgb(220,220,220);
+	border-right: 1px solid rgb(120,120,120);
+	font-size: 12px;
+	font-family: Verdana, sans-serif;
+	/*background-image: url('../images/fer2.png');
+	background-image: url('../images/verre.png');
+	background-repeat: repeat;*/
+}
+
+._form_boutons_tab
+{
+   	/*background: rgb(200,200,120);*/
+	color: rgb(230,230,230);
+	border-bottom: 1px solid rgb(120,120,120);
+	border-top: 1px solid rgb(220,220,220);
+	/*padding: 1px;*/
+	font-size: 12px;
+}
+
+._form_erreurs_tab
+{
+   	padding: 2px;
+   	color: rgb(230,230,230);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+	/*background-image: url('../images/fer2.png');*/
+	background-image: url('../images/verre3.png');
+	background-repeat: repeat;
+}
+
+/**********************************************/
+
+/******************* LABEL *******************/
+._input
+{
+   	margin-right: 0px;
+}
+
+._input_tab
+{
+	color: rgb(230,230,230);
+	border-bottom: 1px solid rgb(120,120,120);
+	border-top: 1px solid rgb(220,220,220);
+	font-size: 12px;
+}
+
+._sousinput_tab
+{
+	padding-left: 4px;
+}
+
+._input_label_oblig_tab
+{
+	padding: 4px;
+	padding-left: 5px;
+	font-weight: bold;
+	color: rgb(230,230,230);
+	background-image: url('../images/test2.png');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+}
+
+._input_label_tab
+{
+	padding: 4px;
+	padding-left: 5px;
+	white-space : nowrap;
+	color: rgb(230,230,230);
+	background-image: url('../images/test2.png');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+}
+
+._sousinput_label_tab
+{
+   	padding: 4px;
+	white-space : nowrap;
+	background: rgb(105,105,130);
+	color: rgb(230,230,230);
+	text-align: center;
+}
+
+._input_label0_tab
+{
+	color: rgb(230,230,230);
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+._input_label_oblig0_tab
+{
+	color: rgb(230,230,230);
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+._sousinput_label0_tab
+{
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+._input1_tab
+{
+	color: rgb(230,230,230);
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+._input_label1_tab
+{
+	color: rgb(230,230,230);
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+._input_label_oblig1_tab
+{
+	color: rgb(230,230,230);
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+._sousinput_label1_tab
+{
+   	color: rgb(185,185,210);
+	padding-left: 6px;
+	padding-right: 2px;
+}
+/*********************************************/
+
+/******************* SELECT *******************/
+._select_tab
+{
+	/*padding: 1px;*/
+}
+
+._select_derouleur_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(150,150,150);
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._select_valeur_tab
+{
+	padding: 1px;
+}
+
+._select_valeuredit
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef_barre_tab
+{
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_haut_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_bas_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_element_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+}
+
+._select_categorie_tab
+{
+	padding-left: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: rgb(230,230,230);
+	background: rgb(110,110,135);
+	font-weight: bold;
+}
+
+._select0_tab
+{
+	/*padding: 1px;*/
+}
+
+._select_derouleur0_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(150,150,150);
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._select_valeur0_tab
+{
+	padding: 1px;
+}
+
+._select_valeuredit0
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste0_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef0_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef_barre0_tab
+{
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_haut0_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_bas0_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_element0_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+}
+
+._select1_tab
+{
+	/*padding: 1px;*/
+}
+
+._select_derouleur1_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(150,150,150);
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._select_valeur1_tab
+{
+	padding: 1px;
+}
+
+._select_valeuredit1
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste1_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef1_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef_barre1_tab
+{
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_haut1_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_bas1_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_element1_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+}
+
+._select2_tab
+{
+	/*padding: 1px;*/
+}
+
+._select_derouleur2_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(150,150,150);
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._select_valeur2_tab
+{
+	padding: 1px;
+}
+
+._select_valeuredit2
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste2_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef2_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._select_liste_bardef_barre2_tab
+{
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_haut2_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_liste_bardef_bas2_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(120,120,120);
+	border-top: 1px solid rgb(140,140,140);
+	border-left: 1px solid rgb(140,140,140);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._select_element2_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+}
+
+
+/**********************************************/
+
+/******************* TEXT *******************/
+._text_tab
+{
+	padding: 1px;
+}
+
+._text_valeuredit
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._text0_tab
+{
+	padding: 1px;
+}
+
+._text_valeuredit0
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+
+._text1_tab
+{
+	padding: 1px;
+}
+
+._text_valeuredit1
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(30,30,30);
+	background: rgb(250,115,115);
+	border-top: 1px solid rgb(250,105,105);
+	border-left: 1px solid rgb(250,105,105);
+	border-bottom: 1px solid rgb(250,105,105);
+	border-right: 1px solid rgb(250,105,105);
+}
+
+._text2_tab
+{
+	padding: 1px;
+}
+
+._text_valeuredit2
+{
+	padding: 1px;
+	margin: 0;
+	color: rgb(30,30,30);
+	background: rgb(250,250,115);
+	border-top: 1px solid rgb(250,250,105);
+	border-left: 1px solid rgb(250,250,105);
+	border-bottom: 1px solid rgb(250,250,105);
+	border-right: 1px solid rgb(250,250,105);
+}
+/********************************************/
+
+/******************* CHECKBOX *******************/
+._checkbox_tab
+{
+	padding: 1px;
+}
+
+._checkbox_elem_tab
+{
+	color: rgb(230,230,230);
+	background: rgb(90,90,115);
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+}
+/***********************************************/
+
+/******************* FILE *******************/
+._file_tab
+{
+	padding: 1px;
+}
+
+._file_select_derouleur_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(200,200,120);
+	border-top: 1px solid rgb(220,220,140);
+	border-left: 1px solid rgb(220,220,140);
+	border-bottom: 1px solid rgb(180,180,100);
+	border-right: 1px solid rgb(180,180,100);
+}
+
+._file_select_valeur_tab
+{
+	padding: 1px;
+}
+
+._file_select_valeuredit
+{
+	padding: 1px;
+	margin: 0;
+	background: rgb(250,250,230);
+	border-top: 2px solid rgb(230,200,0);
+	border-left: 2px solid rgb(230,200,0);
+	border-bottom: 2px solid rgb(230,200,0);
+	border-right: 2px solid rgb(230,200,0);
+	color: rgb(30,30,30);
+}
+
+._file_select_liste_tab
+{
+	background: rgb(250,250,230);
+	border-top: 1px solid rgb(230,200,0);
+	border-left: 1px solid rgb(230,200,0);
+	border-bottom: 1px solid rgb(230,200,0);
+	border-right: 1px solid rgb(230,200,0);
+}
+
+._file_select_element_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+._file_newdec_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(150, 150, 150);
+	/*border-top: 1px solid rgb(220,220,220);
+	border-left: 1px solid rgb(220,220,220);
+	border-bottom: 1px solid rgb(220,220,220);*/
+	border-right: 1px solid rgb(220,220,220);
+	white-space: nowrap;
+}
+/**********************************************/
+
+/******************* NEW *******************/
+._new_tab
+{
+	/*padding: 1px;*/
+}
+
+._new_select_derouleur_tab
+{
+	/*padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(200,200,120);
+	border-top: 1px solid rgb(220,220,140);
+	border-left: 1px solid rgb(220,220,140);
+	border-bottom: 1px solid rgb(180,180,100);
+	border-right: 1px solid rgb(180,180,100);*/
+}
+
+._new_select_valeur_tab
+{
+	padding: 1px;
+}
+
+._new_select_valeuredit
+{
+	padding: 1px;
+	margin: 0;
+	background: rgb(250,250,230);
+	border-top: 2px solid rgb(230,200,0);
+	border-left: 2px solid rgb(230,200,0);
+	border-bottom: 2px solid rgb(230,200,0);
+	border-right: 2px solid rgb(230,200,0);
+	color: rgb(30,30,30);
+}
+
+._new_select_liste_tab
+{
+	background: rgb(250,250,230);
+	border-top: 1px solid rgb(230,200,0);
+	border-left: 1px solid rgb(230,200,0);
+	border-bottom: 1px solid rgb(230,200,0);
+	border-right: 1px solid rgb(230,200,0);
+}
+
+._new_select_element_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+._new_dec_tab
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	background: rgb(150, 150, 150);
+	/*border-right: 1px solid rgb(220,220,220);*/
+	white-space: nowrap;
+}
+
+._new_form_tab
+{
+	padding: 6px;
+	/*background: rgb(200,200,200);*/
+	border-top: 1px solid rgb(220,220,220);
+	border-left: 1px solid rgb(220,220,220);
+	border-bottom: 1px solid rgb(120,120,120);
+	border-right: 1px solid rgb(120,120,120);
+	font-size: 12px;
+	font-family: Verdana, sans-serif;
+	/*background-image: url('../images/fer2.png');*/
+	background-image: url('../images/verre.png');
+	background-repeat: repeat;
+}
+/**********************************************/
+
+/******************* BUTTON *******************/
+._inputinfo_tab
+{
+   	padding-left: 3px;
+   	padding-right: 3px;
+   	padding-top: 4px;
+   	padding-bottom: 4px;
+}
+/**********************************************/
+
+/******************* BUTTON *******************/
+._button_tab
+{
+	padding: 3px;
+	background: rgb(150,150,150);
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+	text-align: center;
+}
+/**********************************************/
+
+/******************* CLASSEUR ********************/
+._classeur_tab
+{
+	padding: 3px;
+}
+
+._classeur_onglets_tab
+{
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	background-image: url('../images/verre3.png');
+	/*border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);*/
+	text-align: center;
+}
+
+._classeur_onglet_tab
+{
+	padding: 3px;
+	color: rgb(230,230,230);
+	background: rgb(150,150,150);
+	/*background-image: url('../images/verre3.png');*/
+	border-top: 3px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+	text-align: center;
+}
+
+._classeur_contenu_tab
+{
+	padding: 3px;
+	background: rgb(150,150,150);
+	/*background-image: url('../images/verre3.png');*/
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+/***********************************************/
+
+/******************* LISTE ********************/
+._liste0_tab
+{
+	padding: 3px;
+	/*background: rgb(150,150,150);*/
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._liste_titre0_tab
+{
+	padding: 2px;
+	color: rgb(230,230,230);
+	background: rgb(80,80,105);
+	border-top: 1px solid rgb(100,100,125);
+	border-left: 1px solid rgb(100,100,125);
+	border-bottom: 1px solid rgb(100,100,125);
+	border-right: 1px solid rgb(100,100,125);
+}
+
+._liste_titreelem0_tab
+{
+   	text-align: center;
+   	border-left: 1px solid rgb(100,100,125);
+	border-right: 1px solid rgb(100,100,125);
+}
+
+._liste_elem0_tab
+{
+   	/*background-image: url('../images/fer2.png');*/
+   	padding: 2px;
+   	color: rgb(100,100,100);
+   	background: rgb(150,150,150);
+   	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._liste_elemchamp0_tab
+{
+   	/*background-image: url('../images/fer2.png');*/
+   	padding: 2px;
+   	/*background: rgb(170,170,170);
+   	border-top: 1px solid rgb(150,150,150);
+	border-left: 1px solid rgb(150,150,150);
+	border-bottom: 1px solid rgb(150,150,150);
+	border-right: 1px solid rgb(150,150,150);*/
+	border-top: 1px solid rgb(170,170,170);
+	border-left: 1px solid rgb(170,170,170);
+	border-bottom: 1px solid rgb(170,170,170);
+	border-right: 1px solid rgb(170,170,170);
+}
+
+._liste_elemmenu0_tab
+{
+	background-image: url('../images/verre3.png');
+	/*background: rgb(230,150,150);*/
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+	text-align: center;
+	padding: 1px;
+}
+
+._liste_elemmenu_elem0_tab
+{
+   	color: white;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+._liste_bardef0_tab
+{
+	background-image: url('../images/verre3.png');
+	/*border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);*/
+	border-top: 1px solid rgb(210,210,210);
+	border-left: 1px solid rgb(210,210,210);
+	border-bottom: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+._liste_bardef_pageprec0_tab
+{
+   	background: rgb(230,230,230);
+   	border-top: 1px solid rgb(210,210,210);
+	border-left: 1px solid rgb(210,210,210);
+	border-bottom: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+._liste_bardef_pagesuiv0_tab
+{
+   	background: rgb(230,230,230);
+   	border-top: 1px solid rgb(210,210,210);
+	border-left: 1px solid rgb(210,210,210);
+	border-bottom: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+._liste_bardef_prempage0_tab
+{
+   	background: rgb(230,230,230);
+   	border-top: 1px solid rgb(210,210,210);
+	border-left: 1px solid rgb(210,210,210);
+	border-bottom: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+._liste_bardef_derpage0_tab
+{
+   	background: rgb(230,230,230);
+   	border-top: 1px solid rgb(210,210,210);
+	border-left: 1px solid rgb(210,210,210);
+	border-bottom: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+._liste_bardef_barre0_tab
+{
+   	background: rgb(230,230,230);
+   	border-top: 1px solid rgb(210,210,210);
+	border-left: 1px solid rgb(210,210,210);
+	border-bottom: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+._liste1_tab
+{
+	padding: 3px;
+	background: rgb(80,80,105);
+	/*border-top: 1px solid rgb(220,170,20);*/
+	border-left: 1px solid rgb(100,100,125);
+	/*border-bottom: 1px solid rgb(220,170,20);*/
+	border-right: 1px solid rgb(100,100,125);
+}
+
+._liste_titre1_tab
+{
+	padding: 2px;
+	color: rgb(230,230,230);
+	background: rgb(80,80,105);
+	border-top: 1px solid rgb(220,170,20);
+	border-left: 1px solid rgb(220,170,20);
+	border-bottom: 1px solid rgb(220,170,20);
+	border-right: 1px solid rgb(220,170,20);
+}
+
+._liste_titreelem1_tab
+{
+   	text-align: center;
+   	border-left: 1px solid rgb(100,100,125);
+	border-right: 1px solid rgb(100,100,125);
+}
+
+._liste_elem1_tab
+{
+   	/*background-image: url('../images/fer2.png');*/
+   	padding: 2px;
+   	color: rgb(230,230,230);
+   	background: rgb(80,80,105);
+   	/*border-top: 1px solid rgb(100,100,125);
+	/*border-left: 1px solid rgb(220,170,20);*/
+	border-bottom: 1px solid rgb(100,100,125);
+	/*border-right: 1px solid rgb(220,170,20);*/
+}
+
+._liste_elemchamp1_tab
+{
+   	/*background-image: url('../images/fer2.png');*/
+   	padding: 2px;
+   	/*color: rgb(200,150,0);
+   	/*background: rgb(250,220,200);*/
+   	/*border-top: 1px solid rgb(220,170,20);
+	border-left: 1px solid rgb(220,170,20);
+	border-bottom: 1px solid rgb(220,170,20);
+	border-right: 1px solid rgb(220,170,20);*/
+}
+
+._liste_elemmenu1_tab
+{
+	background-image: url('../images/verre3.png');
+	/*background: rgb(230,150,150);*/
+	border-top: 1px solid rgb(80,80,105);
+	border-left: 1px solid rgb(80,80,105);
+	border-bottom: 1px solid rgb(80,80,105);
+	border-right: 1px solid rgb(80,80,105);
+	text-align: center;
+	padding: 1px;
+}
+
+._liste_elemmenu_elem1_tab
+{
+   	color: white;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+._liste2_tab
+{
+	padding: 3px;
+	background: rgb(210,210,210);
+	border-left: 1px solid rgb(230,230,230);
+	border-right: 1px solid rgb(230,230,230);
+}
+
+._liste_titre2_tab
+{
+	padding: 2px;
+	color: rgb(50,50,50);
+	background: rgb(210,210,210);
+	border-top: 1px solid rgb(230,230,230);
+	border-left: 1px solid rgb(230,230,230);
+	border-bottom: 1px solid rgb(230,230,230);
+	border-right: 1px solid rgb(230,230,230);
+}
+
+._liste_titreelem2_tab
+{
+   	text-align: center;
+   	border-left: 1px solid rgb(230,230,230);
+	border-right: 1px solid rgb(230,230,230);
+}
+
+._liste_elem2_tab
+{
+   	/*background-image: url('../images/fer2.png');*/
+   	padding: 2px;
+   	color: rgb(50,50,50);
+   	background: rgb(210,210,210);
+	border-bottom: 1px solid rgb(230,230,230);
+}
+
+._liste_elemchamp2_tab
+{
+   	padding: 2px;
+}
+
+._liste_elemmenu2_tab
+{
+	background-image: url('../images/verre3.png');
+	/*background: rgb(230,150,150);*/
+	border-top: 1px solid rgb(230,230,230);
+	border-left: 1px solid rgb(230,230,230);
+	border-bottom: 1px solid rgb(230,230,230);
+	border-right: 1px solid rgb(230,230,230);
+	text-align: center;
+	padding: 1px;
+}
+
+._liste_elemmenu_elem2_tab
+{
+   	color: white;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+._liste_elemcontenu2_tab
+{
+   	background: rgb(230,230,230);
+   	padding: 4px;
+}
+
+._liste5_tab
+{
+	padding: 3px;
+	/*background: rgb(80,80,105);
+	/*border-top: 1px solid rgb(220,170,20);*/
+	border-left: 1px solid rgb(100,100,125);
+	/*border-bottom: 1px solid rgb(220,170,20);*/
+	border-right: 1px solid rgb(100,100,125);
+}
+
+._liste_elem5_tab
+{
+   	padding: 2px;
+   	color: rgb(230,230,230);
+	border-bottom: 1px solid rgb(100,100,125);
+}
+
+._liste_elemtitre5_tab
+{
+   	padding: 2px;
+   	color: rgb(230,230,230);
+   	background: rgb(80,80,105);
+}
+
+._liste_elemchamp5_tab
+{
+   	padding: 2px;
+}
+
+._liste_elem6_tab
+{
+   	padding: 2px;
+	/*border-bottom: 1px solid rgb(130,130,155);*/
+}
+/***********************************************/
+
+/******************* CADRE ********************/
+._scadre_tab
+{
+	padding: 3px;
+	/*background: rgb(150,150,150);*/
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+
+._scadre_titre
+{
+   	background-image: url('../images/fer2.png');
+   	color: rgb(230,230,230);
+   	font-weight: bold;
+}
+
+._scadre_titre_tab
+{
+	padding: 3px;
+	/*background: rgb(220,170,20);*/
+	background-image: url('../images/verre3.png');
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+	text-align: center;
+}
+
+._scadre_contenu_tab
+{
+	padding: 3px;
+	background: rgb(150,150,150);
+	/*background-image: url('../images/verre3.png');*/
+	border-top: 1px solid rgb(130,130,130);
+	border-left: 1px solid rgb(130,130,130);
+	border-bottom: 1px solid rgb(130,130,130);
+	border-right: 1px solid rgb(130,130,130);
+}
+/***********************************************/
+
+/******************* PALETTE ********************/
+._palette_tab
+{
+   	color: rgb(230,230,230);
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	background: rgb(130,130,130);
+	border-top: 1px solid rgb(160,160,160);
+	border-left: 1px solid rgb(160,160,160);
+	border-bottom: 1px solid rgb(100,100,100);
+	border-right: 1px solid rgb(100,100,100);
+}
+
+._palette_cadrecouleur_tab
+{
+	/*border: 1px solid rgb(150,150,0);*/
+	padding: 3px;
+}
+
+._palette_cadretitre_tab
+{
+	background: rgb(80,80,105);
+	padding: 3px;
+}
+
+._palette_titre_tab
+{
+}
+
+._palette_visualiseur_tab
+{
+	/*background: rgb(130,130,0);*/
+}
+
+._palette_editeur_tab
+{
+	/*background: rgb(130,130,0);*/
+}
+
+._palette_slider_tab
+{
+	/*border: 1px solid rgb(130,130,0);
+	background: rgb(170,170,40);*/
+	padding: 2px;
+}
+
+._palette_text_tab
+{
+	/*border: 1px solid rgb(130,130,0);
+	background: rgb(170,170,40);*/
+	padding: 2px;
+}
+
+._palette_incdec_tab
+{
+}
+
+._palette_inc_tab
+{
+	/*border: 1px solid rgb(130,130,0);*/
+}
+
+._palette_dec_tab
+{
+	/*border: 1px solid rgb(130,130,0);*/
+}
+
+._palette_memoire_tab
+{
+	/*background: rgb(130,130,0);*/
+}
+
+._palette_couleur_tab
+{
+	padding: 2px;
+}
+
+/******************* PALETTE ********************/
+._visualiseur_vue_tab
+{
+   	padding: 5px;
+}

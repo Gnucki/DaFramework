@@ -1,0 +1,219 @@
+/******************************************/
+/* Styles temporaires juste pour faire des tests. */
+/******************************************/
+/* Styles pour les tableaux à double entrées animés. */
+.case_titre_ligne
+{
+	background: rgb(220,220,140);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(240,240,160);
+	border-left: 1px solid rgb(240,240,160);
+	border-bottom: 1px solid rgb(200,200,120);
+	border-right: 1px solid rgb(200,200,120);
+}
+
+.case_titre_ligne_on
+{
+	background: rgb(210,210,130);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(240,240,160);
+	border-left: 1px solid rgb(210,210,130);
+	border-bottom: 1px solid rgb(200,200,120);
+	border-right: 1px solid rgb(210,210,130);
+}
+
+.case_titre_colonne
+{
+	background: rgb(220,220,140);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(240,240,160);
+	border-left: 1px solid rgb(240,240,160);
+	border-bottom: 1px solid rgb(200,200,120);
+	border-right: 1px solid rgb(200,200,120);
+}
+
+.case_titre_colonne_on
+{
+	background: rgb(210,210,130);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(210,210,130);
+	border-left: 1px solid rgb(240,240,160);
+	border-bottom: 1px solid rgb(210,210,130);
+	border-right: 1px solid rgb(200,200,120);
+}
+
+.case_non
+{
+	background: rgb(230,130,80);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(250,150,100);
+	border-left: 1px solid rgb(250,150,100);
+	border-bottom: 1px solid rgb(210,110,60);
+	border-right: 1px solid rgb(210,110,60);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_non_sel
+{
+	background: rgb(220,120,70);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(200,100,50);
+	border-left: 1px solid rgb(200,100,50);
+	border-bottom: 1px solid rgb(240,140,90);
+	border-right: 1px solid rgb(240,140,90);
+	text-align: center;
+	cursor: pointer;
+}
+
+/*.case_non_ligne
+{
+	background: rgb(230,130,80);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(210,110,60);
+	border-left: 1px solid rgb(230,130,80);
+	border-bottom: 1px solid rgb(250,150,100);
+	border-right: 1px solid rgb(230,130,80);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_non_colonne
+{
+	background: rgb(230,130,80);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(230,130,80);
+	border-left: 1px solid rgb(210,110,60);
+	border-bottom: 1px solid rgb(230,130,80);
+	border-right: 1px solid rgb(250,150,100);
+	text-align: center;
+	cursor: pointer;
+}*/
+
+.case_non_ligne
+{
+	background: rgb(225,125,75);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(250,150,100);
+	border-left: 1px solid rgb(230,130,80);
+	border-bottom: 1px solid rgb(210,110,60);
+	border-right: 1px solid rgb(230,130,80);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_non_colonne
+{
+	background: rgb(225,125,75);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(230,130,80);
+	border-left: 1px solid rgb(250,150,100);
+	border-bottom: 1px solid rgb(230,130,80);
+	border-right: 1px solid rgb(210,110,60);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_oui
+{
+	background: rgb(130,230,80);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(150,250,100);
+	border-left: 1px solid rgb(150,250,100);
+	border-bottom: 1px solid rgb(110,210,60);
+	border-right: 1px solid rgb(110,210,60);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_oui_sel
+{
+	background: rgb(120,220,70);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(100,200,50);
+	border-left: 1px solid rgb(100,200,50);
+	border-bottom: 1px solid rgb(140,240,90);
+	border-right: 1px solid rgb(140,240,90);
+	text-align: center;
+	cursor: pointer;
+}
+
+/*.case_oui_ligne
+{
+	background: rgb(130,230,80);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(110,210,60);
+	border-left: 1px solid rgb(130,230,80);
+	border-bottom: 1px solid rgb(150,250,100);
+	border-right: 1px solid rgb(130,230,80);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_oui_colonne
+{
+	background: rgb(130,230,80);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(130,230,80);
+	border-left: 1px solid rgb(110,210,60);
+	border-bottom: 1px solid rgb(130,230,80);
+	border-right: 1px solid rgb(150,250,100);
+	text-align: center;
+	cursor: pointer;
+}*/
+
+.case_oui_ligne
+{
+	background: rgb(125,225,75);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(150,250,100);
+	border-left: 1px solid rgb(130,230,80);
+	border-bottom: 1px solid rgb(110,210,60);
+	border-right: 1px solid rgb(130,230,80);
+	text-align: center;
+	cursor: pointer;
+}
+
+.case_oui_colonne
+{
+	background: rgb(125,225,75);
+	padding: 6px;
+	height: 20px;
+	width: 100px;
+	border-top: 1px solid rgb(130,230,80);
+	border-left: 1px solid rgb(150,250,100);
+	border-bottom: 1px solid rgb(130,230,80);
+	border-right: 1px solid rgb(110,210,60);
+	text-align: center;
+	cursor: pointer;
+}

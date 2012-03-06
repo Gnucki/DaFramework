@@ -1,0 +1,32 @@
+/*********************************************************/
+/* Styles appliqués à l'organisation globale de la page. */
+/*********************************************************/
+.cadre_banniere_tab
+{
+	width: 100%;
+	font-size: 12px;
+	border: 1px solid rgb(150,150,150);
+	background-image: url('../images/verre3.png');
+}
+
+.cadre_menu_tab
+{
+	font-size: 12px;
+	border: 1px solid rgb(150,150,150);
+	background-image: url('../images/verre3.png');
+}
+
+.cadre_contenu_tab
+{
+	font-size: 12px;
+	border: 1px solid rgb(150,150,150);
+	background-image: url('../images/verre.png');
+}
+
+.cadre_chat_tab
+{
+	font-size: 12px;
+	border: 1px solid rgb(150,150,150);
+	background-image: url('../images/verre3.png');
+}
+

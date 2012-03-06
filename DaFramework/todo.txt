@@ -1,0 +1,15 @@
+Court terme:
+- Commenter phpdoc Extension.php.
+- Commenter phpdoc ExtensionsHandler.php.
+- Surcharge d'un fichier = nomclasse.php au lieu de nomclasseExtension.php.
+
+Moyen terme:
+- Convert dans un fichier de collation.
+- Changement des path dans une classe.
+- Decorator.
+- Tests.
+- Schéma du mécanisme d'extension.
+- Changement des fichiers déjà écrit.
+- Suppression de la Session.
+
+Long terme:

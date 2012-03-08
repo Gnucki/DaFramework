@@ -3,15 +3,15 @@
 /**
  * The Module class page.
  * @package DaFramework
- * @subpackage Controller_Tools_Extension
+ * @subpackage Core_Toolbox_Extension
  */
-namespace DaFramework\Controller\Tools\Extension
+namespace DaFramework\Core\Toolbox\Extension
 {
 	/**
 	 * The Module abstract class represents a module of the DaFramework
 	 * and allows to build objects for the extension mechanism.
 	 */
-	abstract class Module extends \DaFramework\Controller\Tools\Extension\ExtendableObjectComponent implements IModule
+	abstract class Module
 	{
 		/*************************************/
 		// CLASS PROPERTIES
@@ -83,7 +83,7 @@ namespace DaFramework\Controller\Tools\Extension
 		 * Get an extendable object component.
 		 * @param string $className The module relative class name.
 		 */
-		public function getExtendableObjectComponent($className, &$isSingleton, &$constructor)
+		/*public function getExtendableObjectComponent($className, &$isSingleton, &$constructor)
 		{
 			$extendableObject = null;
 			if (isFileExists($this->_namespaceName.$className))
@@ -112,7 +112,7 @@ namespace DaFramework\Controller\Tools\Extension
 				}
 			}
 			return $extendableObject;
-		}
+		}*/
 	}
 }
 

@@ -2,7 +2,7 @@
 
 // This config.php is the general config file for your website.
 // Absolute root path (where this file and the main.php are).
-define('_APP_ABSOLUTE_ROOT_PATH', 'C:/Divers/Entreprise/DossierProjet/dev/www');
+define('_APP_ABSOLUTE_ROOT_PATH', 'C:/Divers/Workspace/plap/DaFramework');
 
 // Encoding.
 define('_APP_ENCODING', 'utf-8');
@@ -34,7 +34,7 @@ $_app_mapping_namespaceclass_pathfile = array();
 //
 // Each element must be the root namespace of the extension.
 // You can have a config.php file at the root path to configure your extension's features.
-$_app_modules_map = array('DaFramework',
+$_app_modules_map = array('Core',
 						  'Internationalization',
 				  		  'Application');
 

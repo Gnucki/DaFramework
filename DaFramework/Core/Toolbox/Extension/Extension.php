@@ -3,9 +3,9 @@
 /**
  * The Extension class page.
  * @package DaFramework
- * @subpackage Toolbox_Extension
+ * @subpackage Core_Toolbox_Extension
  */
-namespace Toolbox\Extension
+namespace DaFramework\Core\Toolbox\Extension
 {
 	/**
 	 * The Extension class represents an extension of the DaFramework
@@ -33,7 +33,7 @@ namespace Toolbox\Extension
 		 * Decorate an extendable object component (decorator pattern).
 		 * @param \DaFramework\Controller\Tools\Extension\IExtendableObjectComponent $extendableObject The extendable object component.
 		 */
-		public function decorateExtendableObject(IExtendableObjectComponent $extendableObject)
+		/*public function decorateExtendableObject(IExtendableObjectComponent $extendableObject)
 		{
 			// Get the list of parent extendable classes.
 			$class = new \ReflectionClass($extendableObject);
@@ -62,7 +62,7 @@ namespace Toolbox\Extension
 			}
 			
 			return $extendableObject;
-		}
+		}*/
 	}
 }
 

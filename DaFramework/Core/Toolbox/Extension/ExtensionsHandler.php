@@ -7,29 +7,38 @@
  */
 namespace DaFramework\Core\Toolbox\Extension
 {
+	require_once __DIR__.'/Module.php';
+	require_once __DIR__.'/Extension.php';
+	require_once __DIR__.'/Framework.php';
+	require_once __DIR__.'/ExtendableObject.php';
+	require_once __DIR__.'/ExtendableSingletonObject.php';
+	require_once __DIR__.'/ExtendedObject.php';
+	require_once __DIR__.'/ExtendedSingletonObject.php';
+	
+	
 	/**
 	 * The ExtensionsHandler supports the extension mechanism which allows to 
 	 * dynamically overload a class which uses this mechanism.
 	 */
-	class ExtensionsHandler
+	class ExtensionsHandler// extends \Singleton
 	{
 		/*************************************/
 		// CLASS PROPERTIES
 		//
 		/**
-		 * The unique instance of the class (singleton pattern) .
+		 * The unique instance of the class (singleton pattern).
 		 * @var array
 		 */
 		private static $_instance = null;
 		
 		/**
-		 * The unique instance of the class (singleton pattern) .
+		 * The unique instance of the class (singleton pattern).
 		 * @var array
 		 */
 		private static $_framework = null;
 		
 		/**
-		 * The unique instance of the class (singleton pattern) .
+		 * The unique instance of the class (singleton pattern).
 		 * @var array
 		 */
 		private static $_extensions = array();
@@ -44,25 +53,25 @@ namespace DaFramework\Core\Toolbox\Extension
 		 * The unique instance of the class (singleton pattern) .
 		 * @var array
 		 */
-		private $_extendableObjects = array();
+	//	private $_extendableObjects = array();
 		
 		/**
 		 * The unique instance of the class (singleton pattern) .
 		 * @var array
 		 */
-		private $_extendableSingletonObjects = array();
+	//	private $_extendableSingletonObjects = array();
 		
 		/**
 		 * The unique instance of the class (singleton pattern) .
 		 * @var array
 		 */
-		private $_extendableObjectPrototypes = array();
+	//	private $_extendableObjectPrototypes = array();
 		
 		/**
 		 * The unique instance of the class (singleton pattern) .
 		 * @var array
 		 */
-		private $_extendableObjectConstructors = array();
+	//	private $_extendableObjectConstructors = array();
 
 		/**
 		 * The classes' prototypes to build instances.
@@ -77,25 +86,27 @@ namespace DaFramework\Core\Toolbox\Extension
 		/**
 		 * Constructor.
 		 */
-		private function __construct()
+		final private function __construct()
 		{
 			self::$_framework = Framework::getInstance();
 			self::$_modules[0] = self::$_framework;
-			
-			// Allow to use the extension mechanism with the IModule classes too.
-			foreach (self::$_extensions as $extension)
-			{
-				$this->_decorateExtendableObjectsWithExtension($extension);
-			}
+			$this->reloadClasses();
 		}
 		
+		/** 
+		 * Prevent to clone the unique instance.
+		 */
+		final private function __clone()
+		{
+		}
+     
 		/**
 		 * Get the unique instance of the class (singleton pattern).
 		 *@return \DaFramework\Controller\Tools\Extension\ExtensionsHandler The unique instance of the class.
 		 */
-		public static function getInstance()
+		final public static function getInstance()
 		{
-			if (self::$_instance === null)
+			if (!isset(self::$_instance))
 				self::$_instance = new ExtensionsHandler();
 			return self::$_instance;
 		}
@@ -112,8 +123,8 @@ namespace DaFramework\Core\Toolbox\Extension
 		{
 			$extension = null;
 			// If instance already exists you add an extension dynamically, be careful!
-			if (self::$_instance !== null)
-				$extension = self::$_instance->getExtendableObject('Controller\\Tools\\Extension\\Extension');
+			if (isset(self::$_instance))
+				$this->reloadClasses();
 			else
 				$extension = new Extension($extensionNamespaceName);
 				
@@ -130,6 +141,11 @@ namespace DaFramework\Core\Toolbox\Extension
 		 */
 		public function loadClass($fullClassName)
 		{
+			$isClassAlreadyExisting = false;
+			if (isset($this->_classesPropototypes[$fullClassName]))
+				$isClassAlreadyExisting = true;
+				
+			// Load all modules' class' objects.
 			$mainNamespaceEndPos = strpos($fullClassName, '\\', 1);
 			$className = substr($fullClassName, $mainNamespaceEndPos);
 			$isSingleton = false;
@@ -137,16 +153,37 @@ namespace DaFramework\Core\Toolbox\Extension
 			foreach (self::$_modules as $module)
 			{
 				$moduleReflectionClass = $module->loadClass($className);
-				if ($moduleReflectionClass->isSubclassOf('\\DaFramework\\Core\\Toolbox\\Extension\\ExtendableObjectSingleton'))
-					$isSingleton = true;
-				$classModulesObjects[] = array('constructor' => $moduleReflectionClass->getConstructor(), 'instance' => $moduleReflectionClass->newInstance());
+				if (isset($moduleReflectionClass))
+				{
+					if ($moduleReflectionClass->isSubclassOf('\\DaFramework\\Core\\Toolbox\\Extension\\ExtendableObjectSingleton'))
+						$isSingleton = true;
+					$classModulesObjects[] = array('constructor' => $moduleReflectionClass->getConstructor(), 'instance' => $moduleReflectionClass->newInstance());
+				}
 			}
-			if ($isSingleton)
-				eval('namespace '.$namespaceName.' { class '.$className.' extends \\DaFramework\\Core\\Toolbox\\Extension\\ExtendedSingletonObject {} }');
-			else
-				eval('namespace '.$namespaceName.' { class '.$className.' extends \\DaFramework\\Core\\Toolbox\\Extension\\ExtendedObject {} }');
-				
-			$this->_classesPropototypes[$fullClassName] = $classModuleObjects;
+			$this->_classesPropototypes[$fullClassName] = $classModulesObjects;
+			
+			// Create the class dynamically.
+			if (!$isClassAlreadyExisting)
+			{
+				$namespaceEndPos = strrpos($fullClassName, '\\');
+				$className = substr($fullClassName, $namespaceEndPos + 1);
+				$namespaceName = substr($fullClassName, 0, $namespaceEndPos);
+				if ($isSingleton)
+					eval('namespace '.$namespaceName.' { class '.$className.' extends \\DaFramework\\Core\\Toolbox\\Extension\\ExtendedSingletonObject {} }');
+				else
+					eval('namespace '.$namespaceName.' { class '.$className.' extends \\DaFramework\\Core\\Toolbox\\Extension\\ExtendedObject {} }');
+			}
+		}
+		
+		/**
+		 * Reload all classes.
+		 */
+		public function reloadClasses()
+		{
+			foreach ($this->_classesPropototypes as $fullClassName => $classModuleObjects)
+			{
+				$this->loadClass($fullClassName);
+			}
 		}
 		
 		/**
@@ -182,6 +219,7 @@ namespace DaFramework\Core\Toolbox\Extension
 			
 			return $classModulesObjects;
 		}
+		
 		/**
 		 * Get an existing singleton or a new extendable object using the extension mechanism.
 		 * @param string $className The module relative class name.

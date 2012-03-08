@@ -3,15 +3,15 @@
 /**
  * The Framework class page.
  * @package DaFramework
- * @subpackage Controller_Tools_Extension
+ * @subpackage Core_Toolbox_Extension
  */
-namespace DaFramework\Controller\Tools\Extension
+namespace DaFramework\Core\Toolbox\Extension
 {
 	/**
 	 * The Framework class represents the DaFramework base module
 	 * and allows to build objects for the extension mechanism.
 	 */
-	class Framework extends \DaFramework\Controller\Tools\Extension\Module implements IFramework
+	class Framework extends Module
 	{
 		/*************************************/
 		// CLASS PROPERTIES
@@ -31,7 +31,7 @@ namespace DaFramework\Controller\Tools\Extension
 		 */
 		private function __construct()
 		{
-			$this->_namespaceName = '\\DaFramework\\';
+			$this->_namespaceName = '\\Core\\';
 		}
 		
 		/**

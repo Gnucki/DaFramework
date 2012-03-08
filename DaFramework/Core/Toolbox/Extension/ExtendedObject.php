@@ -1,16 +1,16 @@
 <?php
 
 /**
- * The ExtendableObject abstract class page.
+ * The ExtendedObject abstract class page.
  * @package DaFramework
  * @subpackage Core_Toolbox_Extension
  */
 namespace DaFramework\Core\Toolbox\Extension
 {
 	/**
-	 * The ExtendableSingletonObject abstract class is the base class for objects in the extension mechanism.
+	 * The ExtendedSingletonObject abstract class allow to create extended object.
 	 */
-	abstract class ExtendableObject
+	abstract class ExtendedObject
 	{
 		/*************************************/
 		// CLASS PROPERTIES

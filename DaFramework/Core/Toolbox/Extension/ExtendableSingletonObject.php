@@ -5,7 +5,7 @@
  * @package DaFramework
  * @subpackage Core_Toolbox_Extension
  */
-namespace DaFramewor\kCore\Toolbox\Extension
+namespace DaFramework\Core\Toolbox\Extension
 {
 	/**
 	 * The ExtendableSingletonObject abstract class is the base class for singleton objects in the extension mechanism.

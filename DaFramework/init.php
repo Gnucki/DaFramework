@@ -2,17 +2,17 @@
 
 namespace
 {
-	require_once __DIR__.'/Core/Toolbox/Extension/ExtensionHandler.php';
-	
+	require_once __DIR__.'/Core/Toolbox/Extension/ExtensionsHandler.php';
+
 	// Convert error into exception depending on severity.
 	function ErrorHandler($severity, $message, $fileName, $lineNo)
 	{
 		global $_app_extensions_loaded;
-		try
-		{
+		//try
+		//{
 			throw new ErrorException($message, 0, $severity, $fileName, $lineNo);
-		}
-		catch (Exception $exception)
+		//}
+		/*catch (Exception $exception)
 		{
 			if ($_app_extensions_loaded === true)
 				Controller::getExceptionHandler()->Log($exception);
@@ -22,7 +22,7 @@ namespace
 					error_log($message, 0);
 				return false;
 			}
-		}
+		}*/
 		return false;
 	}
 	set_error_handler("ErrorHandler");
@@ -31,13 +31,13 @@ namespace
 	function __autoload($fullClassName)
 	{
 		$mainNamespaceEndPos = strpos($fullClassName, '\\', 1);
-		if ($mainNamespaceEndPos !== false && substr($fullClassName, 0, $mainNamespaceEndPos - 1) === 'DaFramework')
+		if ($mainNamespaceEndPos !== false && substr($fullClassName, 0, $mainNamespaceEndPos) === 'DaFramework')
 		{
-			$namespaceEndPos = strrpos($fullClassName, '\\');
-			$namespaceName = substr($fullClassName, 0, $namespaceEndPos - 1);
-			$className = substr($fullClassName, $namespaceEndPos);
-			eval('namespace '.$namespaceName.' { class '.$className.' {} }');
-			DaFramework\Toolbox\Extension\ExtensionHandler::getInstance()->loadClass($fullClassName);
+			//$namespaceEndPos = strrpos($fullClassName, '\\');
+			//$namespaceName = substr($fullClassName, 0, $namespaceEndPos - 1);
+			//$className = substr($fullClassName, $namespaceEndPos);
+			//eval('namespace '.$namespaceName.' { class '.$className.' {} }');
+			\DaFramework\Core\Toolbox\Extension\ExtensionsHandler::getInstance()->loadClass($fullClassName);
 		}
 	}
 
@@ -94,7 +94,7 @@ namespace
 	 * The Controller class allows to get objects which use 
 	 * the extension mechanism in the Controller namespace.
 	 */
-	class Controller
+	/*class Controller
 	{
 		/*************************************/
 		// CLASS METHODS
@@ -102,7 +102,7 @@ namespace
 		/**
 		* Get an extendable object with the extension mechanism.
 		* @param string $propertyName The class name with relative namespace name: Controller\$className.
-		*/
+		*
 		public static function get($className)
 		{
 			try
@@ -110,7 +110,7 @@ namespace
 				if (\DaFramework\Controller\Tools\Extension\ExtensionsHandler::getInstance()->isExtendableObject('Controller\\'.$className))
 					return \DaFramework\Controller\Tools\Extension\ExtensionsHandler::getInstance()->getExtendableObject($className);
 				else
-					throw new Exception('The ['.$className.'] class does not exist.'/*, CODE::FATAL*/);
+					throw new Exception('The ['.$className.'] class does not exist.'/*, CODE::FATAL*);
 			}
 			catch (\Exception $exception)
 			{
@@ -120,7 +120,7 @@ namespace
 		
 		/**
 		* Get the FrontController object with the extension mechanism.
-		*/
+		*
 		public static function getFrontController()
 		{
 			return \DaFramework\Controller\Tools\Extension\ExtensionsHandler::getInstance()->getExtendableObject('Controller\\FrontController\\FrontController');
@@ -128,7 +128,7 @@ namespace
 		
 		/**
 		* Get the ExceptionHandler object with the extension mechanism.
-		*/
+		*
 		public static function getExceptionHandler()
 		{
 			return \DaFramework\Controller\Tools\Extension\ExtensionsHandler::getInstance()->getExtendableObject('Controller\\Tools\\Exception\\ExceptionHandler');
@@ -136,12 +136,12 @@ namespace
 		
 		/**
 		* Get the ContextHandler object with the extension mechanism.
-		*/
+		*
 		public static function getContextHandler()
 		{
 			return \DaFramework\Controller\Tools\Extension\ExtensionsHandler::getInstance()->getExtendableObject('Controller\\Tools\\Context\\ContextHandler');
 		}
-	}
+	}*/
 }
 
 ?>
